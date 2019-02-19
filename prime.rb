@@ -1,18 +1,12 @@
 # Add  code here!
 def prime?(num)
-  if num==2 || num == 3 || num==5
-    return true
-  end
-  if num%2 != 0
-    if num%3 != 0
-      if num%5 != 0
-        if num%7 != 0
-          if num%11 !=0
-            return true
-          end
-        end
+  def prime?(number)
+    if number >= 2
+      (2..number - 1).all? do |x|
+        number % x != 0
       end
+    else
+      return false
     end
   end
-else return false
 end
