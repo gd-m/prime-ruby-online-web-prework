@@ -10,6 +10,6 @@ def prime?(num)
         end
       end
     end
-    return false
   end
+else return false
 end
